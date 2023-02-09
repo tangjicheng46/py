@@ -14,6 +14,6 @@ s3.add(10)
 s3.remove(1)
 s3.discard(100)
 for i in s3:
-  print(i)
+    print(i)
 
 print(10 in s3)
