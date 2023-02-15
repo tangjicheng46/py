@@ -1,19 +1,11 @@
 class A:
-    a = 1
-    b = 2
+    l = [1, 2, 3, 4]
 
-    def func(self):
-        print("before:", self.a)
-        A.a = 3
-        print("after:", self.a)
+    def __init__(self):
+        self.val = 0
 
 
 a1 = A()
-print(a1.a)
-a1.func()
-print(A.a)
-a1.a = -1
-A.a = 2
+a1.l[0] = -1
 b1 = A()
-print(b1.a)
-print(a1.a)
+print(b1.l[0])
