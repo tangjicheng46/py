@@ -10,3 +10,19 @@ class MyClass:
 
 x = MyClass(1)
 print(abs(x))
+
+
+class A:
+    @staticmethod
+    def func():
+        print("A.func()")
+
+    @classmethod
+    def func2(cls):
+        print("A.func2")
+
+
+A.func()
+A().func()
+A.func2()
+A().func2()
